@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import './css/index.css'
 
 /* ===== Router ===== */
 import {BrowserRouter} from 'react-router-dom'

@@ -1,0 +1,35 @@
+/* ====== Style css page Accueil =====*/
+.home {
+  height: 100vh;
+  padding-top: 40vh;
+  overflow: hidden;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  /*background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.9)), to(rgba(39, 39, 39, 0.3))), url("../img/model-1.jpg") center top;*/
+  background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.9)), to(rgba(39, 39, 39, 0.3))), url("../../../assets/img/img-accueil.jpg") center top;
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../../../assets/img/img-accueil.jpg") center top;
+  background-size: cover;
+}
+
+.home__name {
+  font-size: 5rem;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #ffffff;
+}
+
+.home__name-span {
+  color: #58fc8f;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.home p {
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+/* traivailler le responsive du h1 et du p */
+/*# sourceMappingURL=Accueil.css.map */
