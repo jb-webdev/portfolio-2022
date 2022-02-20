@@ -20,7 +20,7 @@ export const socialData = [
     {
         id : 3,
         icon : "fab fa-github fa-2x",
-        link : "/contact",
+        link : "/jb-webdev",
         colorIcon: "",
     },
 ]

@@ -1,12 +1,17 @@
+/**
+ * Compo Navbar
+ * Author Jean-Jacques Boero
+ * Février 2022
+ * 
+ */
+
 import React from 'react';
 
 import { useState } from 'react';
 
 import {Link} from 'react-router-dom'
-/** style css */
+/* ==== Style CSS ==== */
 import './Navabar.css';
-
-
 
 /* ==== Import Data ==== */
 import {navData} from '../../assets/data/navData'

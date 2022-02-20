@@ -1,3 +1,10 @@
+/**
+ * Compo Contact
+ * Author Jean-Jacques Boero
+ * Février 2022
+ * 
+ */
+
 import React from 'react'
 
 const Contact = () => {

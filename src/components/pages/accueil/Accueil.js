@@ -1,6 +1,20 @@
-import React from 'react'
-import './Accueil.css'
-import { allData } from '../../../assets/data/allData'
+/**
+ * Compo Page Accueil
+ * Author Jean-Jacques Boero
+ * Février 2022
+ * 
+ */
+
+import React from 'react';
+/* ===== import Style CSS ===== */
+import './Accueil.css';
+
+/* ===== import Data ===== */
+import { allData } from '../../../assets/data/allData';
+
+/* ===== import Composant ===== */
+import SocialIcons from '../../Social_Icons/SocialIcons';
+import Footer from '../../footer/Footer';
 
 const Accueil = () => {
   const ALLDATA = allData;
@@ -14,6 +28,9 @@ const Accueil = () => {
         <p>
           {ALLDATA.job}
         </p>
+        <SocialIcons />
+        <Footer />
+      
       </section>
     </main>
   )
