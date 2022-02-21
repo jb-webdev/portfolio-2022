@@ -1,0 +1,15 @@
+@import '../../styles/variables/var-color.scss';
+footer {
+    font-size: 1rem;
+    position: fixed;
+    bottom: 0.4rem;
+    right: 1rem;
+    text-align: right;
+    padding: 1rem;
+    color: $color-2;
+}
+
+.about footer {
+    -webkit-transform: rotate(90deg) translate(-3rem, -5rem);
+            transform: rotate(90deg) translate(-3rem, -5rem);
+}

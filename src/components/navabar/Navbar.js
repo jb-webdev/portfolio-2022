@@ -11,10 +11,10 @@ import { useState } from 'react';
 
 import {Link} from 'react-router-dom'
 /* ==== Style CSS ==== */
-import './Navabar.css';
+import './Navabar.scss';
 
 /* ==== Import Data ==== */
-import {navData} from '../../assets/data/navData'
+import {navData} from '../../assets/data/navData';
 
 
 

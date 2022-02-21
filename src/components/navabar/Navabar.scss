@@ -1,5 +1,11 @@
-@import '../../css/variables/color-variables.scss';
-
+@import '../../styles/variables/var-color.scss';
+@mixin burger{
+  position: absolute;
+  height: 3px;
+  background: $color-2;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
 .menu-btn {
   position: absolute;
   z-index: 1;
@@ -13,36 +19,24 @@
 }
 
 .menu-btn__burger {
-  position: absolute;
   right: 0;
   top: 0.5rem;
   width: 28px;
-  height: 3px;
-  background: $font-white;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  @include burger;
 }
 
 .menu-btn__burger::before {
   content: '';
-  position: absolute;
   top: -8px;
   width: 28px;
-  height: 3px;
-  background: $font-white;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  @include burger;
 }
 
 .menu-btn__burger::after {
   content: '';
-  position: absolute;
   top: 8px;
   width: 20px;
-  height: 3px;
-  background: $font-white;;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  @include burger;
 }
 
 .menu-btn__burger.open {
@@ -88,7 +82,7 @@
               justify-content: center;
       height: 100vh;
       overflow: hidden;
-      background: $bg-primary;
+      background: $bg-1;
       list-style-type: none;
       padding-right: 1rem;
       -webkit-transform: translateY(-100%);

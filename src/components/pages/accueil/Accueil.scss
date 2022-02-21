@@ -1,35 +1,43 @@
-@import '../../../css/variables/color-variables.scss';
 /* ====== Style css page Accueil =====*/
+@import '../../../styles/variables/var-color.scss';
 
-.home {
-    height: 100vh;
-    padding-top: 40vh;
-    overflow: hidden;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    text-align: center;
-    /*background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.9)), to(rgba(39, 39, 39, 0.3))), url("../img/model-1.jpg") center top;*/
-    background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../../../assets/img/img-accueil.jpg") center top;
-    background-size: cover;
-}
+.s-home {
+  height: 100vh;
+  /* on centre les elements enfants au centre de l'element parents*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../../../assets/img/img-accueil.jpg") center top;
+  background-size: cover;
   
+}
 .home__name {
   font-size: 5rem;
   padding-bottom: 1rem;
   margin-bottom: 1rem;
-  border-bottom: 2px solid $font-white;
+  border-bottom: 2px solid $color-2;
+  text-align: center;
 }
-
 .home__name-span {
   color: $color-1;
   font-weight: 700;
   text-transform: uppercase;
 }
-
-.home p {
+.s-home p {
   font-size: 2.5rem;
   font-weight: 400;
 }
 
-/* traivailler le responsive du h1 et du p */
+@media screen and (max-width: 1130px) { 
+  .home__name {
+    font-size: 8vw;
+    margin-top: 1rem;
+    margin-bottom: 1.1rem;
+  }
+  .s-home p {
+    font-size: 5vw;
+  }
+}

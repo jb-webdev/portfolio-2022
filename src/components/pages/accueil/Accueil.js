@@ -7,20 +7,20 @@
 
 import React from 'react';
 /* ===== import Style CSS ===== */
-import './Accueil.css';
+import './Accueil.scss';
 
 /* ===== import Data ===== */
 import { allData } from '../../../assets/data/allData';
 
 /* ===== import Composant ===== */
-import SocialIcons from '../../Social_Icons/SocialIcons';
-import Footer from '../../footer/Footer';
+import Footer from '../../Footer/Footer';
+import Social from '../../SocialIcons/Social';
 
 const Accueil = () => {
   const ALLDATA = allData;
   return (
     <main>
-      <section className='home'>
+      <section className='s-home'>
         <p>Bonjour, je suis</p>
         <h1 className="home__name">
           {ALLDATA.username} <span className="home__name-span">{ALLDATA.name}</span>
@@ -28,9 +28,8 @@ const Accueil = () => {
         <p>
           {ALLDATA.job}
         </p>
-        <SocialIcons />
+        <Social />
         <Footer />
-      
       </section>
     </main>
   )
