@@ -1,0 +1,41 @@
+@import '../../styles/mixin/mixin.scss';
+@import '../../styles/variables/var-color.scss';
+
+.heroPages__bio-image {
+    @include HeroMixin();
+}
+.heroPages-bio {
+    width: 80%;
+    text-align: center;
+}
+  
+.heroPages-title {
+    font-size: 4,329vw;
+    padding-bottom: 1rem;
+    color: $color-1;
+}
+.heroPages-text {
+    margin-bottom: 2rem;
+    color: $color-2;
+}
+
+/* =========== Responsive HeroPages ========== */
+
+@media screen and (min-width: 768px) {
+    .heroPages__bio-image {
+        height: 40vh;
+    }
+    .heroPages-bio {
+        font-size: 1.5rem;
+    }
+    .heroPages-title {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .heroPages__bio-image {
+      height: 50vh;
+      }
+}
+

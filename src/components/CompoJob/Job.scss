@@ -1,0 +1,33 @@
+@import '../../styles/variables/var-color.scss';
+.jobs {
+    width: 60vw;
+    margin: 2rem auto 0 auto;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 2rem;
+}
+
+.box-job {
+    background: $bg-2;
+    padding: 0.5rem;
+    border-bottom: 5px solid $color-1;
+}
+
+.job-date {
+    margin: 0.5rem 0;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+.job-entreprise{
+    color: $color-1;
+    margin: 0.5rem 0;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.job-poste, .job-description{
+    margin: 0.3rem 0;
+    font-size: 1.2rem;
+}

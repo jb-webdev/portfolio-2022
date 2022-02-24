@@ -5,14 +5,31 @@
  * 
  */
 
-
  import React from 'react';
 
+ import { allData } from "../../../assets/data/allData"
+
+ /* import style css */
+ import './About.scss';
+
+ /* ===== Import Composants ===== */
+import HeroPages from '../../HeroPages/HeroPages';
+import Job from '../../CompoJob/Job';
+import Footer from '../../Footer/Footer';
+import Social from '../../SocialIcons/Social';
+
  const About = () => {
-   
+
+   const DATA = allData;
+
    return (
      <main>
-       <h1>About page en construction</h1>
+       <section className="about">
+         <HeroPages title="About" description={DATA.description}/>
+         <Job />
+       </section>
+       <Social />
+       <Footer />
      </main>
      );
  };

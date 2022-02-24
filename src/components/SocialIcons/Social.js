@@ -5,9 +5,10 @@
  * 
  */
 import React from 'react';
-import { Link } from 'react-router-dom';
 /* ===== import data ===== */
 import { socialData } from "../../assets/data/socialData";
+
+import './Social.scss';
 
 
 const Social = () => {
@@ -15,9 +16,12 @@ const Social = () => {
         <div className="social-icons">
             { socialData.map((SOCIALDATA) => {
             return (
-                <Link to={SOCIALDATA.link} key={SOCIALDATA.id}>
+                <a href ={SOCIALDATA.link} 
+                    target = "_blank" 
+                    rel ='noreferrer' 
+                    key={SOCIALDATA.id}>
                 <i className={SOCIALDATA.icon}></i>
-                </Link>
+                </a>
             )
             })}
         </div>

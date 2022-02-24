@@ -11,6 +11,7 @@
  /* ===== Import Data ===== */
  import { projetData } from '../../../assets/data/projetData';
 /* ===== Import Composants ===== */
+import HeroPages from '../../HeroPages/HeroPages';
 import Footer from '../../Footer/Footer';
 import Social from '../../SocialIcons/Social';
 
@@ -18,9 +19,9 @@ import Social from '../../SocialIcons/Social';
    return (
      <main>
        <section className="projects">
-        <div className="projects__bio-image">
-          <h1 className="text-secondary">Mes Réalisations</h1>
-        </div>
+
+        <HeroPages title="Réalisation"/>
+
         <div className="projects__items">
           {projetData.map((PROJET) => {
             return (
@@ -42,9 +43,9 @@ import Social from '../../SocialIcons/Social';
               )
           })}   
         </div>
-        <Social />
-        <Footer />
       </section>
+      <Social />
+      <Footer />
      </main>
      );
  };

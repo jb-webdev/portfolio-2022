@@ -1,28 +1,10 @@
 @import '../../../styles/variables/var-color.scss';
-
+@import'../../../styles/mixin/mixin.scss';
 /* ========== SECTION PROJETS ========== */
 .projects {
-    padding-bottom: 2rem;
+  @include  GlobalSection();
   }
   
-.projects__bio-image {
-  height: 30vh;
-  width: 100%;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.9)), to(rgba(39, 39, 39, 0.3))), url("../../../assets/img/img-accueil.jpg") center top;
-  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../../../assets/img/img-accueil.jpg") center top;
-  background-size: cover;
-  
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.projects__bio-image .text-secondary {
-  font-size: 2rem;
-  margin-bottom: 2rem;
-}
-
 .projects__items {
   width: 60vw;
   margin: 2rem auto 0 auto;
@@ -31,21 +13,21 @@
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
   grid-gap: 2rem;
-}
+  }
 
 .projects__item {
   position: relative;
   border-bottom: 5px solid $color-1;
   overflow: hidden;
   cursor: pointer;
-}
+  }
 
 .projects__item img {
   width: 100%;
-}
+  }
 
 .projects__item::after {
-  content: '';
+content: '';
   position: absolute;
   top: 100%;
   left: 0;
@@ -54,17 +36,18 @@
   background: $color-1;
   opacity: 0;
   -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
-}
+  }
 
 .projects__item:hover::after {
   top: 0;
   opacity: 0.9;
-}
+  }
 
 .projects__item:hover .projects__btn {
   opacity: 1;
-}
+  }
 
 .projects__btns {
   position: absolute;
@@ -80,48 +63,40 @@
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-}
+  }
 
 .projects__btn {
   opacity: 0;
   color: #000;
   -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
-}
+  }
 
 .projects__btn:hover {
   color: $color-2;
-}
+  }
 .projects footer {
   -webkit-transform: rotate(90deg) translate(-3rem, -5rem);
-          transform: rotate(90deg) translate(-3rem, -5rem);
-}
+          -ms-transform: rotate(90deg) translate(-3rem, -5rem);
+      transform: rotate(90deg) translate(-3rem, -5rem);
+  }
 
 /* =========== Responsive Projets ========== */
 
 @media screen and (min-width: 768px) {
-  
-  .projects__bio-image {
-    height: 40vh;
-  }
+
   .projects__items {
     -ms-grid-columns: repeat(2, 1fr);
         grid-template-columns: repeat(2, 1fr);
-  }
-  .projects .text-secondary {
-    font-size: 3rem;
-  }
+    }
   
-}
+
+  }
 
 @media screen and (min-width: 1024px) {
   .projects__items {
     -ms-grid-columns: repeat(3, 1fr);
         grid-template-columns: repeat(3, 1fr);
+    }
   }
-}
-@media screen and (min-width: 1600px) {
-  .projects__bio-image {
-    height: 50vh;
-  }
-}

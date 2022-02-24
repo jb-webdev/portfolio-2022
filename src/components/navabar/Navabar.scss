@@ -4,6 +4,7 @@
   height: 3px;
   background: $color-2;
   -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 .menu-btn {
@@ -15,6 +16,7 @@
   width: 28px;
   cursor: pointer;
   -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
@@ -41,19 +43,22 @@
 
 .menu-btn__burger.open {
   -webkit-transform: rotate(720deg);
-          transform: rotate(720deg);
+          -ms-transform: rotate(720deg);
+      transform: rotate(720deg);
   background: transparent;
 }
 
 .menu-btn__burger.open::before {
   -webkit-transform: rotate(45deg) translate(5px, 8px);
-          transform: rotate(45deg) translate(5px, 8px);
+          -ms-transform: rotate(45deg) translate(5px, 8px);
+      transform: rotate(45deg) translate(5px, 8px);
 }
 
 .menu-btn__burger.open::after {
   width: 28px;
   -webkit-transform: rotate(-45deg) translate(3px, -7px);
-          transform: rotate(-45deg) translate(3px, -7px);
+          -ms-transform: rotate(-45deg) translate(3px, -7px);
+      transform: rotate(-45deg) translate(3px, -7px);
 }
 .nav {
   position: fixed;
@@ -86,23 +91,29 @@
       list-style-type: none;
       padding-right: 1rem;
       -webkit-transform: translateY(-100%);
-              transform: translateY(-100%);
+              -ms-transform: translateY(-100%);
+          transform: translateY(-100%);
       -webkit-transition: all 0.5s ease-in-out;
+      -o-transition: all 0.5s ease-in-out;
       transition: all 0.5s ease-in-out;
       }
     .menu-nav.open {
       -webkit-transform: translateY(0);
-              transform: translateY(0);
+              -ms-transform: translateY(0);
+          transform: translateY(0);
       }
     .menu-nav__item {
       -webkit-transform: translateX(100vw);
-              transform: translateX(100vw);
+              -ms-transform: translateX(100vw);
+          transform: translateX(100vw);
       -webkit-transition: all 0.5s ease-in-out;
+      -o-transition: all 0.5s ease-in-out;
       transition: all 0.5s ease-in-out;
       }
     .menu-nav__item.open {
       -webkit-transform: translateX(0);
-              transform: translateX(0);
+              -ms-transform: translateX(0);
+          transform: translateX(0);
       }
     .menu-nav__item.active > a {
       color: $color-1;
@@ -115,6 +126,7 @@
       padding: 2rem 0;
       font-weight: 300;
       -webkit-transition: all 0.5s ease-in-out;
+      -o-transition: all 0.5s ease-in-out;
       transition: all 0.5s ease-in-out;
       }
     .menu-nav__link:hover {
@@ -124,43 +136,48 @@
 
 .menu-nav__item:nth-child(1) {
   -webkit-transition-delay: 0.25s;
-          transition-delay: 0.25s;
+          -o-transition-delay: 0.25s;
+     transition-delay: 0.25s;
 }
 .menu-nav__item:nth-child(2) {
   -webkit-transition-delay: 0.35s;
-          transition-delay: 0.35s;
+          -o-transition-delay: 0.35s;
+     transition-delay: 0.35s;
 }
 
 .menu-nav__item:nth-child(3) {
   -webkit-transition-delay: 0.45s;
-          transition-delay: 0.45s;
+          -o-transition-delay: 0.45s;
+     transition-delay: 0.45s;
 }
 .menu-nav__item:nth-child(4) {
   -webkit-transition-delay: 0.55s;
-          transition-delay: 0.55s;
+          -o-transition-delay: 0.55s;
+     transition-delay: 0.55s;
 }
 @media screen and (min-width: 768px) {
-.menu-btn {
-  visibility: hidden;
-}
-.nav {
-  visibility: visible;
+  .menu-btn {
+    visibility: hidden;
+  }
+  .nav {
+    visibility: visible;
 
-  .menu-nav {
-    display: block;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    height: 100%;
-    background: transparent;
-    text-align: right;
-    }
+    .menu-nav {
+      display: block;
+      -webkit-transform: translateY(0);
+              -ms-transform: translateY(0);
+          transform: translateY(0);
+      height: 100%;
+      background: transparent;
+      text-align: right;
+      }
 
-  .menu-nav__item {
-    display: inline;
-    padding-right: 1.5rem;
-    }
-  .menu-nav__link {
-    font-size: 1.5rem;
-    }
-}
+    .menu-nav__item {
+      display: inline;
+      padding-right: 1.5rem;
+      }
+    .menu-nav__link {
+      font-size: 1.5rem;
+      }
+  }
 }

@@ -22,7 +22,7 @@ export const jobData = [
         id : 0,
         date : "1998 - 2007",
         poste : "Chef d'équipe d'infanterie motorisée",
-        entreprise : "Arméé de terre",
+        entreprise : "Armée de terre",
         ville: "Brive-la-gallairde 19100",
         descritpion : "Lorem ipsum dolores pateren dolore ipsum",
         link : "/"

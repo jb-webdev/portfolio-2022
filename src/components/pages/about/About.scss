@@ -1,0 +1,7 @@
+@import '../../../styles/mixin/mixin.scss';
+@import '../../../styles/variables/var-color.scss';
+@import '../../../styles/variables/var-fonts.scss';
+
+.about {
+    @include HeroMixin();
+}

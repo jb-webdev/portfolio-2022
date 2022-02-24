@@ -1,0 +1,41 @@
+@import '../../../styles/mixin/mixin.scss';
+@import '../../../styles//variables/var-color.scss';
+
+.contact {
+  @include sectionMixin();
+}
+  
+.contact-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: $color-1;
+}
+
+.contact__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  grid-gap: 2rem;
+  font-size: 1.5rem;
+}
+.contact-text-one {
+  color: $color-1;
+}
+
+/* =========== Responsive Contact ========== */
+
+@media screen and (min-width: 768px) {
+  
+  .contact__list {
+    -ms-grid-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .contact__list {
+    -ms-grid-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+  }
+}

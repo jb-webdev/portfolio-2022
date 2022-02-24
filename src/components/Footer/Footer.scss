@@ -9,7 +9,9 @@ footer {
     color: $color-2;
 }
 
+
 .about footer {
     -webkit-transform: rotate(90deg) translate(-3rem, -5rem);
+        -ms-transform: rotate(90deg) translate(-3rem, -5rem);
             transform: rotate(90deg) translate(-3rem, -5rem);
 }
