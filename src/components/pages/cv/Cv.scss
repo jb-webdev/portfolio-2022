@@ -1,0 +1,12 @@
+@import '../../../styles/variables/var-color.scss';
+@import '../../../styles/mixin/mixin.scss';
+
+.s-cv {
+    @include layoutOne();
+    background: $bg-1;
+}
+
+.s-cv-title {
+    color: $color-1;
+}
+

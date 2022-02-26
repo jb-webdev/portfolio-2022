@@ -2,7 +2,7 @@
 @import '../../../styles//variables/var-color.scss';
 
 .contact {
-  @include sectionMixin();
+  @include layoutOne();
 }
   
 .contact-title {

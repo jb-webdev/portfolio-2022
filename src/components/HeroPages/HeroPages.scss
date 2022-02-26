@@ -2,7 +2,7 @@
 @import '../../styles/variables/var-color.scss';
 
 .heroPages__bio-image {
-    @include HeroMixin();
+    @include layoutTwo();
 }
 .heroPages-bio {
     width: 80%;

@@ -5,11 +5,29 @@
  * 
  */
 
-import React from 'react'
+import React from 'react';
 
-const Cv = () => {
+import {useNavigate} from "react-router-dom";
+
+import './Cv.scss';
+
+function Cv () {
+
+  const navigate = useNavigate();
+
+  setTimeout(() => {
+    navigate('/')
+  }, 1500);
+
+
   return (
-    <div>Cv page en construction</div>
+    <>
+      <main>
+        <section className='s-cv'>
+          <h1 className='s-cv-title'>Page en construction</h1>
+        </section>
+      </main>
+    </>
   )
 }
 

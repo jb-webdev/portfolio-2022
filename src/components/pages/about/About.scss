@@ -3,5 +3,5 @@
 @import '../../../styles/variables/var-fonts.scss';
 
 .about {
-    @include HeroMixin();
+    @include layoutTwo();
 }

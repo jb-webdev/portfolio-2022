@@ -1,0 +1,77 @@
+@import '../../../styles/variables/var-color.scss';
+@import '../../../styles/mixin/mixin.scss';
+
+.s-error {
+  @include layoutOne();
+  background: $bg-1;
+  padding-left: 15px;
+ padding-right: 15px;
+}
+
+.s-error-title{
+  color: $color-3;
+  width: 100%;
+  text-align: center;
+  margin: 1em;
+  font-size: 53px;
+}
+
+.s-error-text {
+  width: 100%;
+  text-align: center;
+  color: $color-2;
+  margin-bottom: 0.5em;
+  font-size: 22px;
+}
+
+.s-error-text-span {
+  color: $color-1;
+}
+
+/* RESPONSIVE ERROR PAGE */
+
+@media screen and (max-width: 861px) {
+  .s-error-title{
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  
+  .s-error-text {
+    font-size: 15px;
+  }
+  
+}
+
+@media screen and (max-width: 616px) {
+  .s-error-title{
+    font-size: 30px;
+  }
+  
+  .s-error-text {
+    font-size: 15px;
+  }
+  
+}
+
+@media screen and (max-width: 450px) {
+  .s-error-title{
+    font-size: 27px;
+  }
+  
+  .s-error-text {
+    font-size: 15px;
+  }
+  
+}
+@media screen and (max-width: 400px) {
+  .s-error-title{
+    font-size: 22px;
+  }
+  
+  .s-error-text {
+    font-size: 15px;
+  }
+  
+}

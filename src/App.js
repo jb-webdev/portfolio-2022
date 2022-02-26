@@ -15,6 +15,7 @@ import Projets from './components/pages/projets/Projets';
 import Cv from './components/pages/cv/Cv';
 import Contact from './components/pages/contact/Contact';
 import Navbar from './components/navabar/Navbar';
+import Error from './components/pages/ErrorPages/Error';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route path='/projets' element={<Projets />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='/cv' element={<Cv />} />
+        <Route path='*' element={<Error />} />
       </Routes>
     </div>
   );
